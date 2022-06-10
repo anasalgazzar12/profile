@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>twetter clone</title>    
+<style>
+form{
+    margin: 10% 20% 20% 20%;
+    padding-left: 10%;
+    padding-right: -10%;
+}
+body{
+    background-color: aquamarine;
+}
+#btn{
+    border-radius: 5px;
+    border: 1px solid;
+}
+fieldset{
+    background-color: white;
+}
+
+
+</style>
+
+</head>
+<body>
+<h1> Tweeeter </h1>
+<form>
+ <fieldset>
+  <fieldset> 
+  
+    <label id="user1"></label> 
+
+   <!--<textarea id="user1" cols="50" rows="1">yuor user  </textarea>-->
+     <br>
+   
+    <label> write your tweet </label><br>
+   
+    <textarea id="textarea" cols="50" rows="3" placeholder="write Here"></textarea>
+   
+    <input type="button" name="btn" value="tweet" id="btn">
+<button onclick="getValue()" type="button">send</button>
+  
+   </fieldset>
+   <fieldset>
+    <div id="tweetArea">
+
+
+    </div>
+    <script>
+
+    var userName;
+    userName =document.getElementById("user1").textContent;
+    var tweetTex ;
+    tweetTex = document.getElementById("textarea").textContent;
+    var btn=document.getElementById("btn");
+    var tweetarr=[];
+    tweet={
+        name:userName.text,
+        tText:tweetTex.text
+    }
+    var tweetArea=document.getElementById("tweetArea");
+
+    btn.onclick=function (e){
+  e = tweetarr.push([tweet.name,"<br>",tweet.tText]);
+ // tweetArea.innerHTML=tweetTex+"<br>"+userName ;
+  tweetArea.innerHTML = userName+"<br>"+tweetTex;  
+}
+
+function getValue() {
+var text = document.getElementById("textarea").value;
+tweetArea.innerHTML = text;
+}
+
+
+   
+   
+   </script>
+
+  </fieldset>
+ </fieldset>
+</form>
+
+</body>
+
+</html>

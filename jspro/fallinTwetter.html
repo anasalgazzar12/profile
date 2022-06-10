@@ -1,0 +1,275 @@
+<html>
+<head>
+
+<title>tewtter</title>
+
+<style>
+ #alldiv{
+     display: flex;
+     
+ }   
+.search-img{
+    float: left;
+    padding: 10px
+}
+
+div{
+    background-color: aqua;
+    margin-bottom: 10px;  
+    padding-right: 50px;
+    border-radius: 30px;
+    padding: 2em;
+}
+#search{
+    margin-bottom: 10px;
+    padding: 4px;
+    padding-right: 5em;
+}
+.acount-name{
+    padding-right: 10px;
+}
+.lin-div{
+    display: flex;
+}
+.follow-btn{
+    background-color: black;
+    color: white;
+    width: 8em;
+    border-radius: 10px;
+}
+tweet-btn1{
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+#logoa{
+    margin-left: 60px;
+    padding: 10px;
+}
+.nav{
+    margin-bottom: -10px;
+    margin-top: -10;
+}
+#home{
+    position: 5px;;
+}
+tweet-btn2{
+   
+  
+    float: right bottom;
+
+}
+#cdiv{
+    width: 50%;
+    margin-left: 1%;
+   border-right: 1px solid;
+}
+#rdiv{
+    width: 25%;
+}
+#tweetUserInfo{
+    display: flex;
+
+}
+#userName{
+    margin: 3px;
+}
+.tweet{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+#userImg{
+   border: 1px solid aquamarine;
+    border-radius: 30px;
+}
+#user{
+    border:1px solid;
+    display: flex;
+    border-radius: 5px;
+}
+fieldset{
+    border-radius: 5px;
+}
+#user{
+    display: flex;
+}
+</style>
+
+
+</head>
+<body>
+
+<dev class="divs" id="alldiv">
+<!--//left div -->
+ <dev class="divs" id="ldiv"> 
+  <div clas="reight-div" id="search"> 
+     <img class="search-img" src="searchiqon.png" 
+        alt="sersh?" height="20px" width="20px">
+     <p> Search Twitter</p>
+  </div>
+ 
+  <div class="reight-div"> 
+    <h3>Trends for you</h3>
+  <pre>
+    #I love me 
+                             1,m Tweets   
+  </pre>
+  <pre>
+    #I love me 
+                             1,m Tweets   
+  </pre>
+  <pre>
+    #I love me 
+                             1,m Tweets   
+  </pre>
+  <pre>
+    #I love me 
+                             1,m Tweets   
+  </pre>
+  <pre>
+    #I love me 
+                             1,m Tweets   
+  </pre>
+
+  </div>
+
+  <div class="reight-div"> 
+  
+    <h2>who to follow</h2>
+    <div class="lin-div"> 
+      <img src="#" alt="littel-photo" height="50px" width="50px">
+      <p class="acount-name" class="littel-photo">acount name</p> 
+      <button class="follow-btn">follow</button>  
+    </div>
+
+    <div class="lin-div">
+      <img src="#" alt="littel-photo" height="50px" width="50px">
+      <p class="acount-name" class="littel-photo">acount name</p> 
+      <button class="follow-btn">follow</button>  
+    </div>
+
+    <div class="lin-div">
+      <img src="#" alt="littel-photo" height="50px" width="50px">
+      <p class="acount-name" class="littel-photo">acount name</p> 
+      <button class="follow-btn">follow</button>  
+    </div>
+
+  </div>
+ </dev>
+ <!--//cinter div--> 
+ <div class="divs" id="cdiv" >
+    <h3 id="home">Home</h3>
+     <a href="../index.html" id="user"><div id="userInt">
+      <img id="user" src="../anas.jpg" alt="hoam poto" height="50" width="50">
+      <p>anas_algazzar</p></div>
+     </a>
+     <form>
+    
+     <textarea  id="tweetText" cols="30" rows="2" >What's happening ?</textarea>
+     
+     <input type="button" name="btn1" value="Tweet" class="tweet-btn1" id="tweet-btn2"/>
+   
+     </form>
+    <hr>
+    <br>
+   <script >
+   var tweet={
+       a:document.getElementById("userInt"),
+       b:document.getElementById("tweetText")
+   };
+
+   var tweetDiv = document.createElement("div");
+   
+   var tweetArr = [];
+
+   const btn=document.getElementById("tweet-btn2");
+   
+   btn.addEventListener("click",function (e){
+       tweetArr.push = tweet;
+       
+       e = tweetDiv.innerHTML = tweetArr.values;
+       return e;
+   });
+   document.getElementById(tweetText)[0]
+        .addEventListener('click', function (event) {
+          tweetArr.push = tweet;
+       tweetDiv.innerHTML = tweetArr.values;
+            // do something
+        });
+   
+
+</script>
+  
+
+<!--<div id="tweetArea">
+   
+   <div class="tweet" id="tweet1">
+      <span id="tweetUserInfo">
+       <img id="userImg" src="profile.png" alt="user phoro" height="30px" width="30px">
+       <p id="userName">anas algazzar </p>
+      </span>
+     <p id="userText"> blablablablablabla
+       blablablablablablablablablablabl
+       blablablablablablablablablablablablaabla</p>
+    </div>
+
+ </div>-->
+
+ </div>
+<!--reight div--> 
+ <div class="divs" id="rdiv">
+     <img class="littel-phpto" id="logoa" src="tweet-logo.png" alt="logo" height="50" width="50">
+ <br>
+  <div class="lin-div" class="nav" id="hoame">
+     <img src="home.png" alt="hoam poto" height="50" width="50">
+     <h3>Hoame</h3>
+  </div>
+
+  <div class="lin-div" class="nav" id="explore">
+    <img src="explore.png" alt="hoam poto" height="50" width="50">
+    <h3>Explore</h3>
+  </div>
+
+  <div class="lin-div" class="nav" id="not"> 
+    <img src="not.png" alt="hoam poto" height="50" width="50">
+    <h3>Notification</h3>
+  </div>
+
+  <div class="lin-div"  class="nav" id="messag"> 
+    <img src="mesage.png" alt="hoam poto" height="50" width="50">
+    <h3>Messages</h3>
+  </div>
+
+  <div class="lin-div"  class="nav" id="bookmark"> 
+    <img src="bookmark.png" alt="hoam poto" height="50" width="50">
+    <h3>Bookmarks</h3>
+  </div>
+
+  <div class="lin-div" class="nav" id="lists"> 
+    <img src="list.png" alt="hoam poto" height="50" width="50">
+    <h3>Lists</h3>
+  </div>
+
+  <div class="lin-div" class="nav" id="profile"> 
+    <img src="profile.png" alt="hoam poto" height="50" width="50">
+    <h3>profile</h3>
+  </div>
+
+  <div class="lin-div" class="nav" id="more">
+    <img src="more.png" alt="hoam poto" height="50" width="50">
+    <h3>More</h3>
+  </div>
+
+  <!--  <button class="tweet-btn1" id="tweet-btn1">Tweet</button> -->
+ </div>
+
+
+</dev>
+
+</body>
+
+
+
+
+
+</html>
